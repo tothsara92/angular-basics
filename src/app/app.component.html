@@ -1,15 +1,9 @@
-<div
-  class="box"
-  [ngClass]="isInMove ? 'grabbed' : 'not-grabbed'"
-  [ngStyle]="{
-    'position': 'absolute',
-    'left.px': xPosition,
-    'top.px': yPosition
-  }"
-  (mousedown)="boxDragStart()"
-  (mouseup)="boxDragEnd()"
-  (mousemove)="boxDrag($event)"
->
-  <h1>Szia Uram!<br/>Mozdíts el!</h1>
-
+<div style="background-color: pink; border: 10px solid black; height: 100vh;">
+  <h2 style="text-align: center; margin: 0; font-family: Arial, Helvetica, sans-serif;">
+    App komponens
+  </h2>
+  <app-color-choser (newColorChosed)="chosingColor($event)"></app-color-choser>
+  <app-box [xPosition]="250" [yPosition]="100" [chosenColor]="chosenColor"></app-box>
+  <app-box [xPosition]="90" [yPosition]="330" [chosenColor]="chosenColor"></app-box>
+  <app-box [xPosition]="310" [yPosition]="550" [chosenColor]="chosenColor"></app-box>
 </div>

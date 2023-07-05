@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BoxComponent } from './box/box.component';
+import { ColorChoserComponent } from './color-choser/color-choser.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BoxComponent,
+    ColorChoserComponent
   ],
   imports: [
     BrowserModule,
