@@ -1,0 +1,25 @@
+.box {
+  background-color: blue;
+  border: 2px solid navy;
+  border-radius: 5px;
+  height: 150px;
+  width: 400px;
+}
+
+.not-grabbed {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.grabbed {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+h1 {
+  color: azure;
+  text-align: center;
+}
