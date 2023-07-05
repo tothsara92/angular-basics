@@ -1,0 +1,16 @@
+<div
+  class="box"
+  [ngClass]="isInMove ? 'grabbed' : 'not-grabbed'"
+  [ngStyle]="{
+    'position': 'absolute',
+    'left.px': xPosition,
+    'top.px': yPosition,
+    'background-color': chosenColor,
+  }"
+  (mousedown)="boxDragStart()"
+  (mouseup)="boxDragEnd()"
+  (mousemove)="boxDrag($event)"
+>
+  <h1>Szia Uram!<br/>Mozdíts el!</h1>
+
+</div>
